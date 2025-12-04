@@ -5,6 +5,8 @@ import numpy as np
 from torch import nn
 from torch.nn import Softmax
 
+
+
 class Conv2dGNGELU(nn.Sequential):
     def __init__(self, in_channel, out_channel, kernel_size=3, stride=1, groups=1):
         padding = (kernel_size - 1) // 2
@@ -393,4 +395,5 @@ class CAMEWUNet(nn.Module):
         out = self.conv2(out)
 
         return out
+
 
