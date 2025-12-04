@@ -11,7 +11,7 @@
 # image = transform(image)  # 格式转换
 # image = torch.reshape(image, (1, 3, 256, 256))
 #
-# # 加载模型
+
 # model = SwinFIR()
 # model.load_state_dict(torch.load("swin_fir.pth", map_location=torch.device('cpu')))
 # model.eval()  # 模型转为测试阶段
@@ -70,6 +70,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
